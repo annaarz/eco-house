@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Пункты сбора отходов</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=d27bc46b-9b61-4092-9cd3-dd4aa76247ab"></script>
+    <script src="icon_customImage.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../nav-footer/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3249d5b6dc.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+<nav class="nav">
+        <div class="container">
+            <div class="nav__row">
+                <a href="../index.html" class="nav__logo"><img src="../nav-footer/logo.png" alt="" class="nav__img"></a>
+                <ul class="nav__list list">
+                    <li class="list__elem"> <a href="#" class="list__link link">Мероприятия</a></li>
+                    <li class="list__elem"> <a href="../proj/index.html" class="list__link link">Курсы</a></li>
+                    <li class="list__elem"> <a href="#" class="list__link link">Блог</a></li>
+                    <li class="list__elem"> <a href="#" class="list__link link">Эко-товары</a></li>
+                </ul>
+
+                <div class="nav__to-maps to-maps">
+                    <a href="index.html" class="to-maps__link link">Пункты сбора отходов</a>
+                    <img src="../nav-footer/map.png" alt="" class="to-maps__img">
+                </div>
+
+                <div class="nav__entrance entrance">
+                    <a href="#" class="entrance__link link">Вход ученику</a>
+                    <img src="../nav-footer/arrow.png" alt="" class="entrance__img">
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main>    
+        <img class="co2" src="img/Group 4345.svg" alt="">
+        <img class="planet" src="img/Vector.svg" alt="">
+
+        <div class="geo">
+            <h2>Пункты сбора отходов</h2>
+            <input class="scretch" placeholder="Поиск" type="text">
+            <div class="fullAcc">
+                <button class="accordion">Минск <img class="butImg" src="img/down.png" alt=""></button>
+                <div class="cityPanel">
+                    <p class="cityBut">Минск</p>
+                    <p class="cityBut">Брест</p>
+                    <p class="cityBut">Гродно</p>
+                    <p class="cityBut">Гомель</p>
+                    <p class="cityBut">Могиев</p>
+                    <p class="cityBut">Витебск</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="fullMap">
+            <div class="types">
+                <ul>Типы отходов</ul>
+                <li class="liAcc">Вторсырьё <img class="butImg1" src="img/down.png" alt=""></li>
+                <div class="typePanel">
+                    <div class="custom-checkbox"> <label class="type">Бумага <input class="checkbox"
+                                type="checkbox"><span></span></label> </div>
+                    <div class="custom-checkbox"> <label class="type">Пластик <input class="checkbox"
+                                type="checkbox"><span></span></label> </div>
+                    <div class="custom-checkbox"><label class="type">Другие отходы <input class="checkbox"
+                                type="checkbox"><span></span></label></div>
+                </div>
+                <li class="liAcc">Вещи <img class="butImg2" src="img/down.png" alt=""></li>
+                <div class="typePanel">
+                    <div class="custom-checkbox"> <label class="type">Одежда<input class="checkbox"
+                                type="checkbox"><span></span></label> </div>
+                    <div class="custom-checkbox"> <label class="type">Обувь <input class="checkbox"
+                                type="checkbox"><span></span></label></div>
+                    <div class="custom-checkbox"> <label class="type">Головные уборы <input class="checkbox"
+                                type="checkbox"><span></span></label></div>
+                </div>
+                <li class="liAcc">Мусорки <img class="butImg3" src="img/down.png" alt=""></li>
+                <div class="typePanel">
+                    <div class="custom-checkbox"> <label class="type">Мусорки<input class="checkbox"
+                                type="checkbox"><span></span></label> </div>
+                    <div class="custom-checkbox"> <label class="type">Пункты сбора <input class="checkbox"
+                                type="checkbox"><span></span></label></div>
+                    <div class="custom-checkbox"> <label class="type">Свалки <input class="checkbox"
+                                type="checkbox"><span></span></label></div>
+                </div>
+                <li class="liAcc">Опасные отходы <img class="butImg4" src="img/down.png" alt=""></li>
+                <div class="typePanel">
+                    <div class="custom-checkbox"> <label class="type">Медикаменты <input class="checkbox"
+                                type="checkbox"><span></span></label></div>
+                </div>
+            </div>
+            <div id="map"></div>
+        </div>
+
+        <div class="cards">
+            <div class="card">
+                <div class="color first">
+                    <p>Бумага</p>
+                    <img class="first" src="img/123.png" alt="">
+                </div>
+                <div class="content first">
+                    <ul class="ul"> В зелёный контейнер нужно сдавать:
+                        <li class="lif">Старые кинги</li>
+                        <li>Коробки</li>
+                        <li>Бумага</li>
+                        <li>Картон</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card">
+                <div class="color second">
+                    <p>Стекло</p>
+                    <img class="second" src="img/qwe.png" alt="">
+                </div>
+                <div class="content second">
+                    <ul> В синий контейнер нужно сдавать:
+                        <li class="lif">Бутылки</li>
+                        <li>Битая посуда</li>
+                        <li>Банки</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card">
+                <div class="color third">
+                    <p>Пластик</p>
+                    <img class="first" src="img/zxc.png" alt="">
+                </div>
+                <div class="content third">
+                    <ul> В желтый контейнер нужно сдавать:
+                        <li class="lif">Пакеты</li>
+                        <li>Упаковки от шампуней</li>
+                        <li>PET-бутылки</li>
+                        <li>TetraPak упаковки</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card">
+                <div class="color fourth">
+                    <p>Другие </p>
+                    <p>отходы</p>
+                    <img class="fourth" src="img/asd.png" alt="">
+                </div>
+                <div class="content fourth">
+                    <ul> В черный контейнер нужно сдавать:
+                        <li class="lif">Пишевые отходы</li>
+                        <li>Непереробатываемый мусор</li>
+                        <li>Стаканы от кофе</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <section class="events ">
+            <div class="containers ">
+                <h4 class="events__title ">Ближайшие мероприятия</h4>
+
+                <div class="events__group ">
+                    <div class="subsection ">
+                        <img src="../man.png " alt=" " class="events__img ">
+                        <i class="fa-regular fa-bookmark"></i>
+                        <p class="events__txt ">Субботник</p>
+                        <div class="events__info ">
+                            <p class="events__date ">07.05.2022</p>
+                            <div class="events__views ">
+                                <i class="fa-light fa-eye fa"></i>
+                                <p class="events__quantity ">145</p>
+                            </div>
+                        </div>
+                        <p class="events__about ">Ежегодная уборка парков Минска. Вы можете очистить свой любимый парк от мусора.</p>
+                    </div>
+
+                    <div class="subsection ">
+                        <img src="../globe.png " alt=" " class="events__img ">
+                        <i class="fa-regular fa-bookmark"></i>
+                        <p class="events__txt ">Школа</p>
+
+                        <div class="events__info ">
+                            <p class="events__date ">07.05.2022</p>
+                            <div class="events__views ">
+                                <i class="fa-light fa-eye fa "></i>
+                                <p class="events__quantity ">284</p>
+                            </div>
+                        </div>
+                        <p class="events__about ">Выездные мастер-классы в школы на тему “Загрязнение окружающей среды”. </p>
+                    </div>
+
+                    <div class="subsection ">
+                        <img src="../garbage.png " alt=" " class="events__img ">
+                        <i class="fa-regular fa-bookmark"></i>
+                        <p class="events__txt ">Переработка</p>
+                        <div class="events__info ">
+                            <p class="events__date ">20-24.06.2022</p>
+                            <div class="events__views ">
+                                <i class="fa-light fa-eye fa "></i>
+                                <p class="events__quantity ">104</p>
+                            </div>
+                        </div>
+                        <p class="events__about ">Принеси отходы пластика на переработку и получи бонусы к обучению.</p>
+                    </div>
+                </div>
+
+                <div class="events__more more ">
+                    <a href="# " class="more__link ">
+                        <p class="more__txt ">Смотреть все</p>
+                    </a>
+                    <img src="../iconoir_arrow-right-circled.png " alt=" " class="more__arrow ">
+                </div>
+            </div>
+        </section>
+
+        <div class="img">
+            <img src="img/Frame 4319.png" alt="">
+        </div>
+        <div class="toAll">
+            <a href="#">Посетить</a>
+            <img src="img/iconoir_arrow-right-circled.svg" alt="">
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__support support">
+                <div class="support__group">
+                    <ul class="support__list">
+                        <li class="support__elem"><a href="../index.html" class="support__link link">Главная</a></li>
+                        <li class="support__elem"><a href="../proj/index.html" class="support__link link">Курсы</a></li>
+                        <li class="support__elem"><a href="#" class="support__link link">Мероприятия</a></li>
+                        <li class="support__elem"><a href="#" class="support__link link">Эко-товары</a></li>
+                        <li class="support__elem"><a href="index.html" class="support__link link">Пункты сбора отходов</a></li>
+                        <li class="support__elem"><a href="#" class="support__link link">Блог</a></li>
+                        <li class="support__elem"><a href="#" class="support__link link">Кабинет</a></li>
+                    </ul>
+                </div>
+
+                <div class="support__more">
+                    <img src="../nav-footer/logo.png" alt="" class="support__logo">
+
+                    <div class="support__social">
+                        <img src="../nav-footer/mail.png" alt="" class="support__mail">
+                        <img src="../nav-footer/vk.png" alt="" class="support__vk">
+                        <img src="../nav-footer/inst.png" alt="" class="support__inst">
+                    </div>
+                </div>
+            </div>
+
+            <p class="txt">© 2022 Эка-хатка</p>
+
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
